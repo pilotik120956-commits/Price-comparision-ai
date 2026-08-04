@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ШІ-пошук цін</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 ШІ-пошук <span>найнижчої ціни</span></h1>
+      <p class="subtitle">🤖 ШІ аналізує ціни з усіх сайтів автоматично</p>
+    </header>
+
+    <div class="search-section">
+      <div class="filters">
+        <div class="filter-group">
+          <label>🌍 Країна</label>
+          <select id="country">
+            <option value="ua">Україна</option>
+            <option value="pl">Польща</option>
+            <option value="de">Німеччина</option>
+            <option value="us">США</option>
+            <option value="all">Всі країни</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>📦 Стан</label>
+          <select id="condition">
+            <option value="new">Нове</option>
+            <option value="used">Вживане</option>
+            <option value="all">Всі</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Введіть назву товару..." value="iPhone 15">
+        <button id="searchBtn">🔎 Шукати</button>
+      </div>
+    </div>
+
+    <div class="results" id="results">
+      <div class="loading" style="display:none">
+        <div class="spinner"></div>
+        <p>🔍 Шукаємо сайти та аналізуємо ціни...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
